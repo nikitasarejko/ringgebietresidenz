@@ -38,6 +38,16 @@ body {
 		}
 }
 
+a {
+	color: $teal;
+	transition: all .5s ease-out;
+	
+	&:hover {
+		color: $black;
+		text-decoration: none;
+	}
+}
+
 header {
 	
 	height: 100vh;
