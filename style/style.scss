@@ -794,6 +794,24 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 			
 		}
 		
+		&.full-bleed {
+			
+			& figure {
+				
+				&.map {
+					height: 75vh;
+					max-height: none;
+					
+					& img {
+						max-height: none;
+						height: 75vh;
+					}
+				}
+				
+			}
+			
+		}
+		
 		&.third-width {
 			
 			& div.third-width__inner {
