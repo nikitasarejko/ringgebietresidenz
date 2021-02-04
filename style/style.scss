@@ -487,6 +487,8 @@ footer {
 	-webkit-align-items: center;
 	align-items: center;
 	
+	transition: all .5s;
+	
 	& img {
 		object-fit: cover;
 		height: 100%;
@@ -497,16 +499,19 @@ footer {
 .swiper-slide.swiper-slide-prev,
 .swiper-slide.swiper-slide-next {
 	opacity: 0.15;
+	transition: all .5s;
 }
 
 .swiper-slide.swiper-slide-prev {
 	transform-origin: right center;
 	transform: scale(0.8) translateX(-24px);
+	transition: all .5s;
 }
 
 .swiper-slide.swiper-slide-next {
 	transform-origin: left center;
 	transform: scale(0.8) translateX(24px);
+	transition: all .5s;
 }
 
 .grundriss {
