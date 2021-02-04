@@ -155,8 +155,11 @@ header {
 					color: #fff;
 					font-family: "PT Serif", serif;
 					text-decoration: none;
-					font-size: 3.2rem;
-					margin-bottom: 2.4rem;
+					font-size: 2.4rem;
+					margin-bottom: 1.6rem;
+					
+					transform: translateY(100%);
+					opacity: 0;
 				}
 			}
 		}
@@ -496,6 +499,24 @@ footer {
 	opacity: 0.15;
 }
 
+.grundriss {
+	
+	& .swiper-slide.swiper-slide-prev,
+	  .swiper-slide.swiper-slide-next {
+		opacity: 1;
+	}
+	
+	& .swiper-slide.swiper-slide-prev {
+		transform-origin: right center;
+		transform: scale(1) translateX(0);
+	}
+	
+	& .swiper-slide.swiper-slide-next {
+		transform-origin: left center;
+		transform: scale(1) translateX(0);
+	}
+}
+
 .swiper-slide.swiper-slide-prev {
 	transform-origin: right center;
 	transform: scale(0.8) translateX(-24px);
@@ -701,6 +722,25 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 @media screen and (max-width: 808px) {
 	
+	header {
+		height: 66.666vh;
+		
+		& div.hero-slider {
+			height: 66.666vh;
+			position: relative;
+			
+			& .swiper-pagination.swiper-pagination-bullets {
+				bottom: 1.6rem;
+			}
+			
+			& .swiper-pagination-bullet {
+				width: 1.2rem;
+				height: 1.2rem;
+				border: 2px solid #fff;
+			}
+		}
+	}
+	
 	section {
 		padding: 4rem 2vw;
 		
@@ -786,7 +826,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 				}
 				
 				& button {
-					padding: 2.4rem 12rem;
+					padding: 2.4rem 8rem;
 				}
 			}
 			
@@ -800,8 +840,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 					width: 100%;
 					
 					& img {
-						width: 180px;
-						height: 100%;
+						width: 210px;
+						height: 50%;
 					}
 				}
 			}

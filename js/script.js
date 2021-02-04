@@ -17,14 +17,16 @@ menuToggle.addEventListener('click', function () {
 	if (mobileNavigation.classList.contains('is-open')) {
 		bodyTag.classList.add('locked');
 		
+		gsap.set('.mobile-nav__links a', { yPercent: 105, opacity: 0, stagger: 0.15, delay: 0.4, ease: Circ.easeOut });
 		gsap.to('.burger-top', { rotation: 45, transformOrigin: '50% 50%', y: -32 });
 		gsap.to('.burger-bottom', { rotation: -45, transformOrigin: '50% 50%', y: 32 });
-		gsap.from('.mobile-nav__links a', { yPercent: 105, opacity: 0, stagger: 0.15, delay: 0.4, ease: Circ.easeOut });
+		gsap.to('.mobile-nav__links a', { yPercent: 0, opacity: 1, stagger: 0.15, delay: 0.4, ease: Circ.easeOut });
 	} else {
 		bodyTag.classList.remove('locked');
 		
 		gsap.to('.burger-top', { rotation: 0, transformOrigin: '50% 50%', y: 0 });
 		gsap.to('.burger-bottom', { rotation: 0, transformOrigin: '50% 50%', y: 0 });
+		gsap.to('.mobile-nav__links a', { yPercent: 105, opacity: 0, stagger: 0.15, delay: 0.4, ease: Circ.easeOut });
 	}
 	
 	const mobileLinks = document.querySelectorAll('.mobile-nav__links a');
@@ -37,6 +39,7 @@ menuToggle.addEventListener('click', function () {
 				
 				gsap.to('.burger-top', { rotation: 0, transformOrigin: '50% 50%', y: 0 });
 				gsap.to('.burger-bottom', { rotation: 0, transformOrigin: '50% 50%', y: 0 });
+				gsap.to('.mobile-nav__links a', { yPercent: 105, opacity: 0, stagger: 0.15, delay: 0.4, ease: Circ.easeOut });
 			}
 		})
 	})
