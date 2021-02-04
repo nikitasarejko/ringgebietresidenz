@@ -243,26 +243,60 @@
 	<div class="swiper-container grundriss">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
+				<img src="img/grundriss_1.png" alt="Grundriss">
 			</div>
 			<div class="swiper-slide">
-				<img src="img/grundriss_1.png" alt="Grundriss">
 				<img src="img/grundriss_2.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_3.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_4.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_5.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_6.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_7.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_8.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_9.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_10.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_11.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_12.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_13.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_14.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_15.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_16.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_17.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_18.png" alt="Grundriss">
+			</div>
+			<div class="swiper-slide">
 				<img src="img/grundriss_19.png" alt="Grundriss">
 			</div>
 		</div>
@@ -331,9 +365,9 @@
 	<script>
 		var swiper = new Swiper('.swiper-container', {
 			slidesPerView: 1,
-			  spaceBetween: 10,
-			  centeredSlides: true,
-			  slideToClickedSlide: false,
+			spaceBetween: 10,
+			centeredSlides: true,
+			slideToClickedSlide: false,
 			grabCursor: true,
 			initialSlide: 0,
 			speed: 1000,
@@ -346,6 +380,26 @@
 				// when window width is >= 640px
 				640: {
 				  slidesPerView: 1.25,
+				  spaceBetween: 0
+				}
+			  }
+		});
+		
+		var swiperGrundruss = new Swiper('.grundriss', {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			grabCursor: true,
+			initialSlide: 1,
+			loop: true,
+			speed: 1000,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+				// when window width is >= 640px
+				640: {
+				  slidesPerView: 1,
 				  spaceBetween: 0
 				}
 			  }

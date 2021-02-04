@@ -499,24 +499,6 @@ footer {
 	opacity: 0.15;
 }
 
-.grundriss {
-	
-	& .swiper-slide.swiper-slide-prev,
-	  .swiper-slide.swiper-slide-next {
-		opacity: 1;
-	}
-	
-	& .swiper-slide.swiper-slide-prev {
-		transform-origin: right center;
-		transform: scale(1) translateX(0);
-	}
-	
-	& .swiper-slide.swiper-slide-next {
-		transform-origin: left center;
-		transform: scale(1) translateX(0);
-	}
-}
-
 .swiper-slide.swiper-slide-prev {
 	transform-origin: right center;
 	transform: scale(0.8) translateX(-24px);
@@ -525,6 +507,24 @@ footer {
 .swiper-slide.swiper-slide-next {
 	transform-origin: left center;
 	transform: scale(0.8) translateX(24px);
+}
+
+.grundriss {
+	
+	& .swiper-slide.swiper-slide-prev,
+	  .swiper-slide.swiper-slide-next {
+		opacity: 1;
+	}
+	
+	& .swiper-slide.swiper-slide-prev {
+		transform-origin: inherit;
+		transform: none;
+	}
+	
+	& .swiper-slide.swiper-slide-next {
+		transform-origin: inherit;
+		transform: none;
+	}
 }
 
 .swiper-pagination.swiper-pagination-bullets {
